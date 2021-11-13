@@ -4,7 +4,7 @@ import avg
 
 SAMPLE_NUMS = [1, 2, 3, 4, 5]
 
-COUNT = 5
+COUNT = 55
 
 SUM = 15
 
@@ -60,4 +60,4 @@ class TestCalculateAvg:
         avg of numbers should be correct
         '''
 
-        assert SUM / COUNT == avg.calculate_avg(SUM, COUNT)
+        assert round(SUM / COUNT, 3) == avg.calculate_avg(SUM, COUNT)
